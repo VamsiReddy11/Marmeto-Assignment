@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn-icons-png.flaticon.com/32/1170/1170678.png"
+    />
+    <title>Bundle Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">MyStore</div>
+        <nav class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">Bundles</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="bundle-builder">
+      <!-- Product Grid -->
+      <section class="products">
+        <h2>Select Your Products</h2>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="bundle-sidebar">
+        <h2>Your Bundle</h2>
+        <div class="progress-container">
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" id="progressFill"></div>
+          </div>
+          <p id="progressText">0/3 added</p>
+        </div>
+
+        <ul id="selectedList" class="selected-products">
+          <!-- Selected items will appear here -->
+        </ul>
+
+        <div class="totals">
+          <p>Discount: <span id="discount">0%</span></p>
+          <p>Subtotal: $<span id="subtotal">0.00</span></p>
+        </div>
+
+        <button id="bundleBtn" disabled>Add Bundle to Cart</button>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-left">
+          <div class="footer-logo">MyStore</div>
+          <p>&copy; 2025 MyStore. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer-right">
+          <p>🛡️ Secure Checkout</p>
+          <p>
+            Developed by
+            <a
+              href="https://vamsireddy11.github.io/my_portfoliolatest/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Vamsi Reddy
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
